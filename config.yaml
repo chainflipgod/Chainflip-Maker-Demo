@@ -1,0 +1,64 @@
+# config.yaml
+
+# WebSocket and API URLs, insert your Chainflip API info here, as well as preferred hedging exchange (Hyperliquid example) 
+chainflip_ws_url: "ws://127.0.0.1:10589"
+chainflip_api_url: "http://localhost:10589"
+hyperliquid_ws_url: "wss://api.hyperliquid.xyz/ws"
+
+# Chainflip LP address, insert yours below
+chainflip_lp_address: "your_chainflip_lp_address_here"
+
+# Assets, you can add the other Chainflip assets here if you'd like 
+assets:
+  base:
+    chain: "Ethereum"
+    asset: "ETH"
+  dot:
+    chain: "Polkadot"
+    asset: "DOT"
+  quote:
+    chain: "Ethereum"
+    asset: "USDC"
+
+# Trading amounts, where you the amounts for your buy and sell orders on Chainflip
+trading_amounts:
+  eth:
+    sell:
+      primary: 0.1
+    buy:
+      primary: 0.1
+  dot:
+    sell:
+      primary: 10
+    buy:
+      primary: 10
+
+# Telegram settings, if you'd like to use Telegram notifications 
+telegram:
+  bot_token: 'your_telegram_bot_token_here'
+  chat_id: 'your_telegram_chat_id_here'
+
+# Order fill file, where the maker.py script will place information regarding your orders so you can build a hedging script
+order_fill_file: 'order_fills.json'
+
+# LP address identifiers
+lp_identifiers:
+  your_chainflip_lp_address_here: "YourLPName"
+
+# Trading parameters, where you set your preferred spreads for a given asset 
+trading:
+  eth:
+    buy_factor: 0.9990
+    sell_factor: 1.0010
+  dot:
+    buy_factor: 0.9950
+    sell_factor: 1.0050
+  price_change_threshold: 0.0010
+
+# Logging configuration
+logging:
+  level: 'INFO'
+  format: '%(asctime)s - %(levelname)s - %(message)s'
+
+# Decimal precision
+decimal_precision: 50
