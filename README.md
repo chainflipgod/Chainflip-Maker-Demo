@@ -14,7 +14,7 @@ Before running the bot, ensure you have the following:
 
 1. Python 3.7 or higher installed
 2. Chainflip LP API set up and running
-3. A Chainflip LP address
+3. A Chainflip LP address funded with at least 10 $FLIP
 4. A Telegram bot token and chat ID (optional, for notifications)
 
 ## Setup
