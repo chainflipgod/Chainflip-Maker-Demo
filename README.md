@@ -21,7 +21,7 @@ Before running the bot, ensure you have the following:
 
 1. Clone this repository:
 
-git clone https://github.com/yourusername/chainflip-market-maker.git
+git clone https://github.com/chainflipgod/Chainflip-Maker-Demo.git
 cd chainflip-market-maker
 
 2. Install the required Python packages:
